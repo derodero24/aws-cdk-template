@@ -1,6 +1,6 @@
 import * as cdk from 'aws-cdk-lib';
-import { Construct } from 'constructs';
-// import * as sqs from 'aws-cdk-lib/aws-sqs';
+
+import type { Construct } from 'constructs';
 
 export class AwsCdkTemplateStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
@@ -10,7 +10,7 @@ export class AwsCdkTemplateStack extends cdk.Stack {
 
     // example resource
     // const queue = new sqs.Queue(this, 'AwsCdkTemplateQueue', {
-    //   visibilityTimeout: cdk.Duration.seconds(300)
+    //   visibilityTimeout: cdk.Duration.seconds(300),
     // });
   }
 }
