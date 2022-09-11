@@ -7,7 +7,7 @@ import { AwsCdkTemplateStack } from '../lib/aws-cdk-template-stack';
 const app = new cdk.App();
 new AwsCdkTemplateStack(app, 'AwsCdkTemplateStack', {
   env: {
-    account: process.env['CDK_DEFAULT_ACCOUNT'],
-    region: process.env['CDK_DEFAULT_REGION'],
+    account: process.env.CDK_DEFAULT_ACCOUNT,
+    region: process.env.CDK_DEFAULT_REGION,
   },
 });

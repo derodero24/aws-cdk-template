@@ -9,6 +9,7 @@ specifiers:
   aws-cdk: 2.41.0
   aws-cdk-lib: 2.41.0
   constructs: ^10.1.99
+  dotenv: ^16.0.2
   eslint: ^8.23.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-import: ^2.26.0
@@ -31,6 +32,7 @@ devDependencies:
   '@types/prettier': 2.7.0
   '@typescript-eslint/eslint-plugin': 5.36.2_2l2r3i3lm6jysqd4ac3ql4n2mm
   aws-cdk: 2.41.0
+  dotenv: 16.0.2
   eslint: 8.23.0
   eslint-config-prettier: 8.5.0_eslint@8.23.0
   eslint-plugin-import: 2.26.0_iepzrjnvahcxaf6zc7cutko6om
@@ -1458,6 +1460,11 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       esutils: 2.0.3
+    dev: true
+
+  /dotenv/16.0.2:
+    resolution: {integrity: sha512-JvpYKUmzQhYoIFgK2MOnF3bciIZoItIIoryihy0rIA+H4Jy0FmgyKYAHCTN98P5ybGSJcIFbh6QKeJdtZd1qhA==}
+    engines: {node: '>=12'}
     dev: true
 
   /electron-to-chromium/1.4.247:

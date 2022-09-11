@@ -17,6 +17,7 @@
     "experimentalDecorators": true,
     "strictPropertyInitialization": false,
     "exactOptionalPropertyTypes": false,
+    "noPropertyAccessFromIndexSignature": false,
     "typeRoots": [
       "./node_modules/@types"
     ]
