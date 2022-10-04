@@ -7,7 +7,7 @@ interface CustomStackProps extends cdk.StackProps {
   config: Config;
 }
 
-export class AwsCdkTemplateStack extends cdk.Stack {
+export class AwsCdkStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: CustomStackProps) {
     super(scope, id, props);
 
