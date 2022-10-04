@@ -7,11 +7,14 @@
   },
   "scripts": {
     "bootstrap": "cdk bootstrap --profile default",
-    "deploy": "cdk deploy --profile default",
-    "destroy": "cdk destroy --profile default",
-    "diff": "cdk diff --profile default",
-    "list": "cdk list --profile default",
-    "synth": "cdk synth --profile default",
+    "deploy": "cdk deploy --profile default -c env=dev",
+    "destroy": "cdk destroy --profile default -c env=dev",
+    "diff": "cdk diff --profile default -c env=dev",
+    "synth": "cdk synth --profile default -c env=dev",
+    "deploy:prod": "cdk deploy --profile default -c env=prod",
+    "destroy:prod": "cdk destroy --profile default -c env=prod",
+    "diff:prod": "cdk diff --profile default -c env=prod",
+    "synth:prod": "cdk synth --profile default -c env=prod",
     "test": "jest"
   },
   "dependencies": {
