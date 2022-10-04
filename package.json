@@ -6,8 +6,12 @@
     "aws-cdk-template": "bin/aws-cdk-template.js"
   },
   "scripts": {
-    "build": "# tsc",
-    "watch": "# tsc -w",
+    "bootstrap": "cdk bootstrap --profile default",
+    "deploy": "cdk deploy --profile default",
+    "destroy": "cdk destroy --profile default",
+    "diff": "cdk diff --profile default",
+    "list": "cdk list --profile default",
+    "synth": "cdk synth --profile default",
     "test": "jest"
   },
   "dependencies": {
