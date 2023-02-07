@@ -12,7 +12,8 @@ export class AwsCdkStack extends cdk.Stack {
     super(scope, id, props);
 
     const env = props.config.env;
-    console.log(env);
+    const prefix = props.config.prefix;
+    console.log(env, prefix);
 
     // The code that defines your stack goes here
 

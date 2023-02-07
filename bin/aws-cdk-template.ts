@@ -9,11 +9,12 @@ const app = new cdk.App();
 const env = app.node.tryGetContext('env') as Env;
 const config = getConfig(env);
 
-new AwsCdkStack(app, config.name, {
+new AwsCdkStack(app, 'Stack', {
+  stackName: `${config.prefix}-stack`,
+  description: config.description,
   env: {
     account: process.env.AWS_ACCOUNT,
     region: process.env.AWS_REGION,
   },
-  description: config.description,
   config,
 });
