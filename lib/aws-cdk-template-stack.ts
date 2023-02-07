@@ -8,10 +8,11 @@ interface CustomStackProps extends cdk.StackProps {
 }
 
 export class AwsCdkStack extends cdk.Stack {
-  constructor(scope: Construct, id: string, props?: CustomStackProps) {
+  constructor(scope: Construct, id: string, props: CustomStackProps) {
     super(scope, id, props);
 
-    console.log(props?.config.greet);
+    const env = props.config.env;
+    console.log(env);
 
     // The code that defines your stack goes here
 
